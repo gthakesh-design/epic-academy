@@ -2,87 +2,146 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Karate | Epic Academy Coimbatore</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Karate Program | Epic Academy Coimbatore</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:wght@400;600&family=Russo+One&family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-inner">
+
 <header>
   <div class="wrap">
-    <a class="logo" href="index.html#home"><i></i>EPIC ACADEMY</a>
-    <button class="dots" id="dots" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <a class="logo" href="index.html#home">
+      <div class="logo-badge">🥋</div>
+      EPIC ACADEMY
+    </a>
+    <button class="dots" id="dots" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
     <nav id="nav">
-      <a href="index.html#home">Home</a>
-      <a href="index.html#programs">Programs</a>
-      <a href="index.html#founder">Founder</a>
-      <a href="karate.html">Karate</a>
-      <a href="#join">Join Now</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="index.html#home">Home 🏠</a>
+      <a href="index.html#programs">Powers ⚡</a>
+      <a href="index.html#founder">Sensei 🥋</a>
+      <a href="karate.html">Karate 🥊</a>
+      <a href="#join">Join Now 🎯</a>
+      <a href="index.html#contact">Basecamp 📍</a>
     </nav>
   </div>
 </header>
 
 <main>
+  <!-- Karate Hero -->
   <section class="k-hero">
     <div class="txt">
-      <h1>Karate: discipline in every move</h1>
-      <p style="margin:16px 0 24px;max-width:40ch">Train your body, calm your mind and learn to defend yourself with Epic Academy.</p>
-      <a class="btn" href="#join">Apply now</a>
+      <div class="speech-bubble">Ultimate Fist Technique! 👊</div>
+      <h1>KARATE: SPEED, FOCUS & POWER!</h1>
+      <p>Train your mind to be calm like water and strike with lightning speed. Build unbreakable defensive reflexes with Epic Academy Coimbatore!</p>
+      <a class="btn cartoon-btn" href="#join">ENROLL NOW! 💥</a>
     </div>
-    <!-- Put your karate photo in the images folder and name it karate.jpg -->
-    <div class="img"><img src="images/karate.jpg" alt="Epic Academy karate training" onerror="this.remove()"></div>
+    <div class="img">
+      <div class="comic-frame-k">
+        <img src="images/karate.jpg" alt="Epic Academy Karate Sparring" onerror="this.remove()">
+        <div class="badge-burst">WHAM!</div>
+      </div>
+    </div>
   </section>
 
+  <!-- Breakdown -->
   <section class="blk">
     <div class="wrap two">
-      <div>
-        <h2>About karate</h2>
-        <p>Karate means "empty hand". It is a martial art that uses punches, kicks, blocks and stances, with no weapon needed.</p>
-        <p>Students learn kata (fixed forms), kumite (sparring) and basic techniques, and earn belts from white up to black as they improve.</p>
+      <div class="info-bubble">
+        <div class="tag-label">THE MARTIAL WAY</div>
+        <h2>WHAT IS KARATE? 🥋</h2>
+        <p>Karate translates directly to <b>"Empty Hand"</b>. It is an art where your own hands and feet become both shield and weapon.</p>
+        <p>Our students master three pillars: <b>Kihon</b> (basics), <b>Kata</b> (pre-set forms), and <b>Kumite</b> (controlled sparring) on their quest to achieve Black Belt status!</p>
       </div>
-      <ul class="ben">
-        <li><b>Fitness</b> Strength, speed, balance and flexibility.</li>
-        <li><b>Focus</b> Better concentration at school and work.</li>
-        <li><b>Self-defence</b> Practical skills and awareness.</li>
-        <li><b>Confidence</b> Respect, courage and discipline.</li>
-      </ul>
+      
+      <div class="comic-card-box">
+        <ul class="ben">
+          <li>
+            <span class="ben-icon">⚡</span>
+            <div><b>Physical Agility:</b> Supercharged flexibility, explosive balance, core power & stamina!</div>
+          </li>
+          <li>
+            <span class="ben-icon">🧠</span>
+            <div><b>Laser Focus:</b> Sharp attention span and high mental clarity at school or work.</div>
+          </li>
+          <li>
+            <span class="ben-icon">🛡️</span>
+            <div><b>Smart Self-Defence:</b> Practical street-smart defensive shields and evasive manoeuvres.</div>
+          </li>
+          <li>
+            <span class="ben-icon">🏆</span>
+            <div><b>Warrior Confidence:</b> True respect, sportsmanship, and positive self-esteem.</div>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <section class="blk" id="join" style="background:#ece6d8">
+  <!-- Application Form -->
+  <section class="blk form-section" id="join">
     <div class="wrap">
-      <h2>Apply to join</h2>
-      <div class="formbox">
-        <form id="joinForm">
-          <label for="n">Name</label><input id="n" name="Name" required autocomplete="name">
-          <label for="a">Age</label><input id="a" name="Age" type="number" min="3" max="80" required>
-          <label for="c">Contact number</label><input id="c" name="Contact" type="tel" pattern="[0-9+ ]{10,15}" title="Enter a valid phone number" required autocomplete="tel">
-          <label for="e">Gmail</label><input id="e" name="Email" type="email" required autocomplete="email">
-          <label for="x">Experience</label>
-          <select id="x" name="Experience" required>
-            <option value="">Select</option>
-            <option>Beginner (no experience)</option>
-            <option>Less than 1 year</option>
-            <option>1 to 3 years</option>
-            <option>More than 3 years</option>
-          </select>
-          <p class="err" id="err" role="alert"></p>
-          <button class="btn" id="send" type="submit" style="margin-top:20px">Submit</button>
-        </form>
-        <div class="thanks" id="thanks" hidden>
-          <div class="check">✓</div>
-          <h3>Thank you, <span id="who"></span>!</h3>
-          <p>We received your application. Epic Academy will contact you soon.</p>
-          <a class="btn" href="index.html#home">Back to home</a>
+      <div class="form-wrapper">
+        <div class="tag-label yellow" style="margin-bottom:10px">RECRUITMENT TENT</div>
+        <h2>JOIN THE EPIC DOJO 🎯</h2>
+        <p class="sub" style="margin-bottom:20px">Fill in your trainee details. Our master sensei will call you back immediately!</p>
+        
+        <div class="formbox">
+          <form id="joinForm">
+            <div class="form-group">
+              <label for="n">Warrior Name</label>
+              <input id="n" name="Name" placeholder="e.g. Rahul / Karthik" required autocomplete="name">
+            </div>
+
+            <div class="form-group">
+              <label for="a">Age (Years)</label>
+              <input id="a" name="Age" type="number" min="3" max="80" placeholder="e.g. 12" required>
+            </div>
+
+            <div class="form-group">
+              <label for="c">Contact Phone Number</label>
+              <input id="c" name="Contact" type="tel" pattern="[0-9+ ]{10,15}" placeholder="e.g. 9363197914" title="Enter a valid phone number" required autocomplete="tel">
+            </div>
+
+            <div class="form-group">
+              <label for="e">Email Address</label>
+              <input id="e" name="Email" type="email" placeholder="example@gmail.com" required autocomplete="email">
+            </div>
+
+            <div class="form-group">
+              <label for="x">Current Combat Experience</label>
+              <select id="x" name="Experience" required>
+                <option value="">Choose your level</option>
+                <option>Rookie / Total Beginner</option>
+                <option>Less than 1 Year Practice</option>
+                <option>1 to 3 Years (Belt Holder)</option>
+                <option>Advanced (3+ Years)</option>
+              </select>
+            </div>
+
+            <p class="err" id="err" role="alert"></p>
+            <button class="btn cartoon-btn big" id="send" type="submit">SUBMIT APPLICATION 🚀</button>
+          </form>
+
+          <div class="thanks" id="thanks" hidden>
+            <div class="check">🌟</div>
+            <h3>BOOM! WELCOME, <span id="who"></span>!</h3>
+            <p>Your warrior registration has been received! Master Allwin Stephen & team will ring you up soon.</p>
+            <a class="btn cartoon-btn" href="index.html#home">BACK TO DOJO 🏠</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 </main>
-<footer>Epic Academy, Coimbatore · +91 93631 97914 · epicacademycoimbatore20@gmail.com</footer>
+
+<footer>
+  <p>Epic Academy, Coimbatore · +91 93631 97914 · epicacademycoimbatore20@gmail.com</p>
+</footer>
+
 <script src="script.js"></script>
 </body>
 </html>

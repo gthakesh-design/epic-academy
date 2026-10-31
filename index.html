@@ -2,134 +2,258 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Epic Academy | Karate, Silambam & Martial Arts in Coimbatore</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Epic Academy | Cartoon Martial Arts Dojo in Coimbatore</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:wght@400;600&family=Russo+One&family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="intro-on">
 
-<section id="intro" aria-label="Epic Academy opening animation">
+<!-- Cartoon Action Intro Stage -->
+<section id="intro" aria-label="Epic Academy Cartoon Fight Intro">
   <div id="scene">
-    <div class="wall"><div class="title">KARATE CHAMPIONSHIP</div><div class="ban" style="left:18%">OSS</div><div class="ban" style="right:18%">OSS</div></div>
-    <div class="sun"></div><div class="beam b1"></div><div class="beam b2"></div>
+    <div class="comic-bg-lines"></div>
+    <div class="wall">
+      <div class="comic-badge">🥋 TOURNAMENT ARC 🥋</div>
+      <div class="ban" style="left:8%">OSS!</div>
+      <div class="ban" style="right:8%">KAPOW!</div>
+    </div>
+    <div class="sun"></div>
     <div class="floor"></div>
     <div id="crowd"></div>
     <div class="board"></div>
     <div class="mat"><div class="mf"></div><div class="mt"></div></div>
+    
+    <!-- Dynamic Fighter Ring -->
     <div class="arena" id="arena"></div>
     <div id="crowdF"></div>
   </div>
+  
   <div class="vig"></div>
-  <div id="score" aria-label="Score"><div class="r" id="sr">0</div><div class="b" id="sb">0</div></div>
+  
+  <div id="score" aria-label="Score">
+    <div class="r" id="sr">RED: 0</div>
+    <div class="vs">VS</div>
+    <div class="b" id="sb">BLUE: 0</div>
+  </div>
+  
   <div id="call" aria-live="polite"></div>
+  
+  <!-- Victory Pop Card -->
   <div id="win">
     <div class="card">
-      <div class="medal"><svg viewBox="0 0 80 90" aria-hidden="true"><path d="M18 8h44v22a22 22 0 0 1-44 0z" fill="#fff3c4" stroke="#6b4608" stroke-width="3"/><path d="M18 14H6c0 16 6 24 16 26M62 14h12c0 16-6 24-16 26" fill="none" stroke="#6b4608" stroke-width="3"/><rect x="34" y="52" width="12" height="16" fill="#fff3c4" stroke="#6b4608" stroke-width="3"/><rect x="22" y="68" width="36" height="12" fill="#6b4608"/></svg></div>
-      <div class="msg"><span class="ribbon">WINNER</span><h2>Congratulations!</h2><p>Epic Academy Student</p></div>
+      <div class="medal">
+        <svg viewBox="0 0 80 90" aria-hidden="true">
+          <path d="M18 8h44v22a22 22 0 0 1-44 0z" fill="#FFE600" stroke="#000" stroke-width="4"/>
+          <path d="M18 14H6c0 16 6 24 16 26M62 14h12c0 16-6 24-16 26" fill="none" stroke="#000" stroke-width="4"/>
+          <rect x="34" y="52" width="12" height="16" fill="#FFE600" stroke="#000" stroke-width="4"/>
+          <rect x="20" y="68" width="40" height="14" rx="4" fill="#FF2E56" stroke="#000" stroke-width="4"/>
+          <circle cx="40" cy="22" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="msg">
+        <span class="ribbon">CHAMPION!</span>
+        <h2>BOOM! RED HERO WINS!</h2>
+        <p>Epic Academy Super Striker</p>
+      </div>
     </div>
   </div>
+  
   <div id="flash"></div>
-  <button id="skip">Skip</button>
-  <button id="explore" class="btn" hidden>Explore more</button>
+  <button id="skip">SKIP ⏩</button>
+  <button id="explore" class="btn cartoon-btn" hidden>ENTER DOJO 🚀</button>
 </section>
 
-<div class="top"><div class="wrap"><span>Coimbatore, Tamil Nadu</span><span><a href="tel:+919363197914">+91 93631 97914</a> · <a href="mailto:epicacademycoimbatore20@gmail.com">epicacademycoimbatore20@gmail.com</a></span></div></div>
+<!-- Top Bar -->
+<div class="top">
+  <div class="wrap">
+    <span>📍 Coimbatore, Tamil Nadu</span>
+    <span>
+      <a href="tel:+919363197914">📞 +91 93631 97914</a> · 
+      <a href="mailto:epicacademycoimbatore20@gmail.com">✉️ epicacademycoimbatore20@gmail.com</a>
+    </span>
+  </div>
+</div>
+
 <header>
   <div class="wrap">
-    <a class="logo" href="#home"><i></i>EPIC ACADEMY</a>
-    <button class="dots" id="dots" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <a class="logo" href="#home">
+      <div class="logo-badge">🥋</div>
+      EPIC ACADEMY
+    </a>
+    <button class="dots" id="dots" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
     <nav id="nav">
-      <a href="#home">Home</a>
-      <a href="#programs">Programs</a>
-      <a href="#why">Why Epic</a>
-      <a href="#founder">Founder</a>
-      <a href="karate.html">Karate</a>
-      <a href="karate.html#join">Join Now</a>
-      <a href="#contact">Contact</a>
+      <a href="#home">Home 🏠</a>
+      <a href="#programs">Powers ⚡</a>
+      <a href="#why">Why Epic? 💥</a>
+      <a href="#founder">Sensei 🥋</a>
+      <a href="karate.html">Karate 🥊</a>
+      <a href="karate.html#join">Join Batch 🎯</a>
+      <a href="#contact">Basecamp 📍</a>
     </nav>
   </div>
 </header>
 
 <main id="home">
+  <!-- Hero Section -->
   <section class="hero">
     <div class="wrap">
-      <em>Martial arts school, Coimbatore</em>
-      <h1>EPIC ACADEMY</h1>
-      <p>Karate, Silambam and sword fighting. Real discipline, real skill.</p>
-      <a class="btn" href="karate.html#join">Join now</a><a class="btn alt" href="#programs">See programs</a>
+      <div class="speech-bubble">Level Up Your Ninja Skills! 🔥</div>
+      <h1>EPIC MARTIAL ARTS ACADEMY</h1>
+      <p class="hero-desc">Unleash speed, power, and ultimate discipline! Learn authentic Karate, Silambam, and sword fight tactics right here in Coimbatore!</p>
+      <div class="btn-group">
+        <a class="btn cartoon-btn" href="karate.html#join">JOIN THE CLAN! 💥</a>
+        <a class="btn alt cartoon-btn" href="#programs">VIEW SKILLS 🥋</a>
+      </div>
     </div>
   </section>
+
+  <!-- Feature Pills -->
   <div class="pill">
-    <div><h3>Discipline</h3><p>Respect and routine in every class.</p></div>
-    <div><h3>Fitness</h3><p>Strength, speed and stamina.</p></div>
-    <div><h3>Self-defence</h3><p>Skills you can use for life.</p></div>
-    <div><h3>Confidence</h3><p>A calm, focused mind.</p></div>
+    <div class="pill-card">
+      <div class="ico">⚡</div>
+      <h3>DISCIPLINE</h3>
+      <p>Master self-control & warrior routine.</p>
+    </div>
+    <div class="pill-card">
+      <div class="ico">💪</div>
+      <h3>SUPER FITNESS</h3>
+      <p>Explosive stamina, speed & agility.</p>
+    </div>
+    <div class="pill-card">
+      <div class="ico">🛡️</div>
+      <h3>SELF-DEFENCE</h3>
+      <p>Real-world quick combat reflexes.</p>
+    </div>
+    <div class="pill-card">
+      <div class="ico">🔥</div>
+      <h3>CONFIDENCE</h3>
+      <p>Fearless mindset for school & life.</p>
+    </div>
   </div>
 
+  <!-- Programs -->
   <section class="blk" id="programs">
     <div class="wrap">
-      <h2 class="reveal">What we teach</h2>
-      <p class="sub reveal">Traditional martial arts, taught step by step. We also teach other martial arts, so ask us about batches.</p>
+      <div class="tag-label">WARRIOR TRACKS</div>
+      <h2 class="reveal">WHAT WE TEACH! 🥋</h2>
+      <p class="sub reveal">Authentic traditional martial disciplines simplified for modern champions. Grab your belt!</p>
       <div class="progs">
-        <div class="pcard reveal"><h3>Karate</h3><p>Punches, kicks, blocks, kata and sparring. Students move up belt by belt.</p></div>
-        <div class="pcard reveal"><h3>Silambam</h3><p>The Tamil art of staff fighting: footwork, spinning patterns and control.</p></div>
-        <div class="pcard reveal"><h3>Vaal Veechu</h3><p>Sword fighting skills, trained with safe practice weapons and strict discipline.</p></div>
+        <div class="pcard reveal">
+          <div class="pcard-badge">CLASSIC</div>
+          <h3>🥊 KARATE</h3>
+          <p>Punch, block, high-kick, and kata sequences. Level up belt-by-belt through intense sparring combos!</p>
+        </div>
+        <div class="pcard reveal">
+          <div class="pcard-badge">TAMIL ART</div>
+          <h3>🥢 SILAMBAM</h3>
+          <p>The iconic spinning bamboo staff battle system. Boost balance, super footwork, and wrist reflexes!</p>
+        </div>
+        <div class="pcard reveal">
+          <div class="pcard-badge">SWORD ART</div>
+          <h3>⚔️ VAAL VEECHU</h3>
+          <p>Traditional bladesmanship trained strictly with padded & safe bamboo weapons. Pure samurai focus!</p>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Why Us -->
   <section class="blk dark" id="why">
     <div class="wrap">
-      <h2 class="reveal">Why Epic Academy</h2>
-      <p class="sub reveal">Training that builds the person, not just the fighter.</p>
+      <div class="tag-label yellow">POWER PERKS</div>
+      <h2 class="reveal">WHY JOIN EPIC? 💥</h2>
+      <p class="sub reveal">We don't just teach punch combos; we build superhuman character and focus!</p>
       <div class="why">
-        <div class="reveal"><h3>Traditional and modern</h3><p>Classic Tamil and Japanese arts in one academy.</p></div>
-        <div class="reveal"><h3>Step by step</h3><p>Every student learns basics first, then techniques and sparring.</p></div>
-        <div class="reveal"><h3>Respect first</h3><p>Bowing, discipline and teamwork are part of every class.</p></div>
-        <div class="reveal"><h3>Ready to compete</h3><p>Students who want tournaments get focused practice.</p></div>
+        <div class="why-card reveal">
+          <h3>⛩️ Traditional & Modern</h3>
+          <p>Rare fusion of Japanese Karate precision with ancient Tamil Silambam tactics under one dojo roof.</p>
+        </div>
+        <div class="why-card reveal">
+          <h3>🪜 Step-by-Step Ranks</h3>
+          <p>Zero stress for beginners! From foundational stances to advanced black-belt combat routines.</p>
+        </div>
+        <div class="why-card reveal">
+          <h3>🤝 Respect & Honor</h3>
+          <p>Strict bowing etiquette, anti-bullying discipline, and positive team spirit in every single session.</p>
+        </div>
+        <div class="why-card reveal">
+          <h3>🏆 Tournament Ready</h3>
+          <p>Special state & national tournament combat training for students craving gold medals!</p>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Belt Pathway -->
   <section class="blk">
     <div class="wrap">
-      <h2 class="reveal">The karate belt path</h2>
-      <p class="sub reveal">Students grow from white belt to black belt with regular practice.</p>
+      <div class="tag-label">LEVEL UP SYSTEM</div>
+      <h2 class="reveal">THE BELT PATHWAY 🎖️</h2>
+      <p class="sub reveal">Level up your rank status from rookie White belt all the way to legendary Black belt!</p>
       <div class="path reveal">
-        <span style="background:#fff">White</span><span style="background:#f2c230">Yellow</span><span style="background:#e8862a">Orange</span><span style="background:#2f8f4e;color:#fff">Green</span><span style="background:#2a5bd7;color:#fff">Blue</span><span style="background:#7a4a21;color:#fff">Brown</span><span style="background:#1B1613;color:#fff">Black</span>
+        <span class="belt-w">White (Lvl 1)</span>
+        <span class="belt-y">Yellow (Lvl 2)</span>
+        <span class="belt-o">Orange (Lvl 3)</span>
+        <span class="belt-g">Green (Lvl 4)</span>
+        <span class="belt-b">Blue (Lvl 5)</span>
+        <span class="belt-br">Brown (Lvl 6)</span>
+        <span class="belt-bk">Black (MASTER)</span>
       </div>
     </div>
   </section>
 
-  <section class="blk" id="founder" style="background:#ece6d8">
+  <!-- Founder -->
+  <section class="blk founder-sec" id="founder">
     <div class="wrap founder">
-      <!-- Put the founder photo in images/founder.jpg -->
-      <div class="photo reveal"><b>AS</b><img src="images/founder.jpg" alt="Allwin Stephen" onerror="this.remove()"></div>
-      <div class="reveal">
+      <div class="photo reveal">
+        <div class="comic-frame">
+          <b>AS</b>
+          <img src="images/founder.jpg" alt="Sensei Allwin Stephen" onerror="this.remove()">
+        </div>
+      </div>
+      <div class="reveal founder-text">
+        <div class="bubble-tag">CHIEF SENSEI</div>
         <h2>Allwin Stephen</h2>
-        <p style="font:500 28px 'Oswald',sans-serif;color:var(--red);margin-bottom:10px">Founder, Epic Academy</p>
-        <p style="max-width:56ch">Allwin Stephen started Epic Academy to bring traditional martial arts training to students in Coimbatore. Every class focuses on discipline, respect and steady progress.</p>
+        <div class="rank-title">Founder & Master Instructor</div>
+        <p>Master Allwin Stephen launched Epic Academy to empower boys and girls in Coimbatore with supreme martial confidence, physical agility, and unbreakable discipline.</p>
       </div>
     </div>
   </section>
 
-  <section class="cta"><h2>Ready to start training?</h2><p style="margin-bottom:22px">Fill the short form and we will contact you.</p><a class="btn" href="karate.html#join">Apply now</a></section>
+  <!-- CTA -->
+  <section class="cta">
+    <div class="wrap">
+      <h2>READY TO UNLOCK YOUR POWERS? ⚡</h2>
+      <p>Enroll today! Batches open for kids, teens, and adults!</p>
+      <a class="btn cartoon-btn big" href="karate.html#join">CLAIM YOUR SPOT NOW! 🎯</a>
+    </div>
+  </section>
 
+  <!-- Contact -->
   <section class="blk dark" id="contact">
     <div class="wrap">
-      <h2>Contact</h2>
-      <ul class="contact-list">
-        <li>Phone: <a href="tel:+919363197914">+91 93631 97914</a></li>
-        <li>Email: <a href="mailto:epicacademycoimbatore20@gmail.com">epicacademycoimbatore20@gmail.com</a></li>
-        <li>Place: Coimbatore, Tamil Nadu</li>
-      </ul>
+      <div class="tag-label yellow">HEADQUARTERS</div>
+      <h2>REACH OUR DOJO 📍</h2>
+      <div class="contact-box">
+        <ul class="contact-list">
+          <li><span>📱 Phone:</span> <a href="tel:+919363197914">+91 93631 97914</a></li>
+          <li><span>📧 Email:</span> <a href="mailto:epicacademycoimbatore20@gmail.com">epicacademycoimbatore20@gmail.com</a></li>
+          <li><span>📍 Location:</span> Coimbatore, Tamil Nadu</li>
+        </ul>
+      </div>
     </div>
   </section>
 </main>
-<footer style="background:#17110f;color:#aaa">© Epic Academy, Coimbatore</footer>
+
+<footer>
+  <p>© Epic Academy Dojo, Coimbatore · Powered by Comic Martial Spirit!</p>
+</footer>
+
 <script src="script.js"></script>
 </body>
 </html>
