@@ -403,11 +403,11 @@ if (intro) {
       await executeAttack(RedHero, BlueRival, 'jab', 'hit', ['r', 1]);
       await executeAttack(BlueRival, RedHero, 'round', 'block');
       
-      // Combo 2 (Counter-attack)
+      // Combo 2
       await executeAttack(BlueRival, RedHero, 'kick', 'hit', ['b', 1]);
       await executeAttack(RedHero, BlueRival, 'cross', 'hit', ['r', 2]);
       
-      // Final Finish
+      // Knockout
       await executeAttack(BlueRival, RedHero, 'round', 'dodge');
       scene.classList.add('zoom');
       await executeAttack(RedHero, BlueRival, 'kick', 'ko', ['r', 3]);
